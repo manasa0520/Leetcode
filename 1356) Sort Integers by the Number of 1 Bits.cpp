@@ -11,8 +11,6 @@ public:
     vector<int> sortByBits(vector<int>& arr) {
         vector<int> sorted;
         for(int e : arr){
-            //first sort by set bit count and then by itself
-            //* 100000 because the max of arr is 10000
             sorted.push_back(count_set_bit(e) * 100000 + e);
         }
         sort(sorted.begin(), sorted.end());
