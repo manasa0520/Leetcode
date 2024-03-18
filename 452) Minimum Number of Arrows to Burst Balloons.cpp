@@ -8,7 +8,7 @@ public:
                 return a[1] < b[1];
             });
         
-        
+        //shot to the end of first balloon
         int arrowPos = points[0][1];
         int arrowCnt = 1;
         
