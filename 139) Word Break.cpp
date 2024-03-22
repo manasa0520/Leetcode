@@ -2,10 +2,7 @@ class Solution {
 public:
     bool wordBreak(string s, vector<string>& wordDict) {
         int n = s.size();
-        
-        //key: end index, 1-based
         vector<bool> dp(n+1, false);
-        //empty string
         dp[0] = true;
         
         for(int end = 1; end <= n; ++end){
